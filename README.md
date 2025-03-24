@@ -1,6 +1,6 @@
 # PyConJP MCP Tool
 
-PyConJP 2025 座長の日報（https://pyconjp-2025-chair.nishimotz.com/）から最新記事のタイトルを取得するMCPツールです。
+[PyConJP 2025 座長の日報](https://pyconjp-2025-chair.nishimotz.com/) から最新記事のタイトルを取得するMCPツールです。
 
 **注意**: このツールは実用目的ではなく、学習・実験目的で作成されたものです。実際の運用には適していない可能性があります。
 
