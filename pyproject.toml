@@ -1,0 +1,11 @@
+[project]
+name = "pyconjp-mcp-tool"
+version = "0.1.0"
+description = "MCP tool for fetching the latest article title from PyConJP 2025 Chair website"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.2.1",
+    "requests>=2.28.0",
+    "beautifulsoup4>=4.11.0",
+]
