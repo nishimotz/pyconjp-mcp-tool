@@ -62,14 +62,15 @@ def get_latest_article_title() -> Dict[str, Any]:
 @mcp.tool()
 def get_pyconjp_latest_article() -> str:
     """
-    PyConJP 2025 座長の日報から最新記事のタイトルを取得します。
+    PyConJP 2025 座長の日報から最新記事のタイトルとURLを取得します。
     """
     result = get_latest_article_title()
     
     if "error" in result:
         return result["error"]
     
-    return f"最新記事: {result['title']} ({result['date']})"
+    url_info = f"URL: {result['url']}" if result.get('url') else "URL: 利用できません"
+    return f"最新記事: {result['title']} ({result['date']})\n{url_info}"
 
 
 def start_server(
